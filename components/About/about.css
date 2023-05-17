@@ -36,7 +36,21 @@
 }
 
 .about-right {
+  height: 80%;
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.about-right>p {
+  color: #c2c2c2;
+  font-size: 1rem;
+}
+
+.about-title {
+  font-size: 2.5rem;
+  font-weight: 700;
 }
 
 
@@ -50,6 +64,11 @@
   .about-left {
     display: flex;
     flex-wrap: wrap;
+  }
+
+  .about-title {
+    font-size: 1.2rem;
+    font-weight: 700;
   }
 
   .about-item {

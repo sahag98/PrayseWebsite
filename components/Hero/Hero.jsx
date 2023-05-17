@@ -9,7 +9,7 @@ import { AiOutlineAndroid, AiOutlineApple } from 'react-icons/ai';
 const Hero = () => {
 
   return (
-    <main className='hero-container'>
+    <main id='Home' className='hero-container'>
       <div className='hero-section'>
         <section className='hero-header'>
           <h1 className='hero-title'>Welcome to our prayer list app!</h1>
@@ -17,15 +17,20 @@ const Hero = () => {
             With our app, you can easily create and manage your personal prayer list,
             helping you stay organized and focused in your spiritual walk with God.
           </p>
+
           <div className='getStarted'>
-            <div className='appleDownload'>
-              <p style={{ color: 'black', marginRight: 5, fontWeight: 500, fontSize: '1rem' }}>Get Started</p>
-              <AiOutlineApple size={30} color='black' />
-            </div>
-            <div className='androidDownload'>
-              <p style={{ color: 'white', marginRight: 5, fontWeight: 500, fontSize: '1rem' }}>Get Started</p>
-              <AiOutlineAndroid size={30} />
-            </div>
+            <a style={{ textDecoration: 'none' }}>
+              <div className='appleDownload'>
+                <p style={{ color: 'black', marginRight: 5, fontWeight: 500, fontSize: '1rem' }}>Get Started</p>
+                <AiOutlineApple size={30} color='black' />
+              </div>
+            </a>
+            <a style={{ textDecoration: 'none', color: 'white' }} target='_blank' href="https://play.google.com/store/apps/details?id=com.sahag98.prayerListApp&hl=en_US&gl=US">
+              <div className='androidDownload'>
+                <p style={{ color: 'white', marginRight: 5, fontWeight: 500, fontSize: '1rem' }}>Get Started</p>
+                <AiOutlineAndroid size={30} />
+              </div>
+            </a>
           </div>
         </section>
         <div className='hero-right'>

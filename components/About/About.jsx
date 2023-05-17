@@ -1,5 +1,7 @@
+"use client"
 import './about.css'
 import Image from "next/image";
+import { motion } from 'framer-motion'
 const About = () => {
 
   const about = [
@@ -29,20 +31,26 @@ const About = () => {
     }
   ]
   return (
-    <main className='about-container'>
+    <main id="About" className='about-container'>
       <section className='about-left'>
         {about.map((a) => (
-          <div key={a.id} className='about-item'>
-            <Image className='items-image' width={200} height={200} src={a.image} alt="item images" />
+          <motion.div initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }} transition={0.8} key={a.id} className='about-item'>
+            <Image className='items-image' width={200} height={200} src={a.image} alt={a.title + 'image'} />
             <h2>{a.title}</h2>
             <p>{a.desc}</p>
-          </div>
+          </motion.div>
         ))}
       </section>
-      <section className='about-right'>
-        Our app offers a user-friendly interface and a range of customizable options,
-        allowing you to tailor your prayer list to your specific needs and preferences. You can add prayer requests for yourself or others, set reminders, and even track answered prayers.
-      </section>
+      <motion.div initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }} className='about-right'>
+        <h2 className='about-title'>Our app offers a user-friendly interface and a range of practical
+          features.</h2>
+        <p>
+          You can add prayer requests for yourself or others, track answered prayers,
+          favorite daily verses and much more.
+        </p>
+      </motion.div>
     </main>
   )
 }
