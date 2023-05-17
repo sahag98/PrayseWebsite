@@ -55,7 +55,7 @@ const Navbar = () => {
         <h1 className='navbar-header'>Prayse</h1>
       </section>
       <ul className='nav-list'>
-        {['Home', 'About', 'Fuctionalities', 'Contact', 'Download'].map((item) => (
+        {['Home', 'About', 'Fuctionalities', 'Contact'].map((item) => (
           <li key={`link-${item}`}>
             <a className='normal-links' href={`#${item}`}>{item}</a>
           </li>
@@ -74,7 +74,7 @@ const Navbar = () => {
         >
           <HiX className='X-logo' onClick={() => setToggle(false)} />
           <ul className='mobile-ul' >
-            {['Home', 'About', 'Fuctionalities', 'Contact', 'Download'].map((item) => (
+            {['Home', 'About', 'Fuctionalities', 'Contact'].map((item) => (
               <motion.li variants={linkVariants} onClick={() => setToggle(false)} className='mobile-li' key={`link-${item}`}>
                 <a className='mobile-a' href={`#${item}`}>{item}</a>
               </motion.li>

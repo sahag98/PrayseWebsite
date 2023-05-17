@@ -40,7 +40,8 @@ const About = () => {
         ))}
       </section>
       <section className='about-right'>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet animi voluptatem ex commodi cupiditate officia repellendus explicabo labore facere eveniet, cum deserunt dolorum nam nemo voluptas vitae distinctio cumque ab.
+        Our app offers a user-friendly interface and a range of customizable options,
+        allowing you to tailor your prayer list to your specific needs and preferences. You can add prayer requests for yourself or others, set reminders, and even track answered prayers.
       </section>
     </main>
   )

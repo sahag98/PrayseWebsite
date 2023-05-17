@@ -5,6 +5,7 @@ import { OrbitControls, Sphere, MeshDistortMaterial } from "@react-three/drei";
 import Image from "next/image";
 import React, { Suspense } from 'react'
 import Loading from './loading';
+import { AiOutlineAndroid, AiOutlineApple } from 'react-icons/ai';
 const Hero = () => {
 
   return (
@@ -16,7 +17,16 @@ const Hero = () => {
             With our app, you can easily create and manage your personal prayer list,
             helping you stay organized and focused in your spiritual walk with God.
           </p>
-          <button className='dwnld-button'>Get Started Now</button>
+          <div className='getStarted'>
+            <div className='appleDownload'>
+              <p style={{ color: 'black', marginRight: 5, fontWeight: 500, fontSize: '1rem' }}>Get Started</p>
+              <AiOutlineApple size={30} color='black' />
+            </div>
+            <div className='androidDownload'>
+              <p style={{ color: 'white', marginRight: 5, fontWeight: 500, fontSize: '1rem' }}>Get Started</p>
+              <AiOutlineAndroid size={30} />
+            </div>
+          </div>
         </section>
         <div className='hero-right'>
           <Canvas>
@@ -36,8 +46,8 @@ const Hero = () => {
           </Canvas>
           <Image className='hero-img' width={700} height={700} src='/assets/phone.png' alt="app screenshot" />
         </div>
-      </div>
-    </main>
+      </div >
+    </main >
   )
 }
 

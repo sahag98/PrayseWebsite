@@ -9,6 +9,32 @@
   justify-content: space-between;
 }
 
+.getStarted {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.appleDownload {
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 0.5rem 0.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: azure;
+}
+
+.androidDownload {
+  cursor: pointer;
+  justify-content: space-between;
+  border-radius: 5px;
+  padding: 0.5rem 0.8rem;
+  display: flex;
+  align-items: center;
+  background-color: #212121;
+}
+
 .hero-section {
   height: 100%;
   scroll-snap-align: center;
@@ -60,19 +86,45 @@
 }
 
 .dwnld-button {
-  width: 50%;
-  height: 45px;
   border: none;
   border-radius: 5px;
-  background-color: #A5C9FF;
   font-weight: bold;
   font-size: 1rem;
-  cursor: pointer;
 }
 
 @media screen and (max-width: 768px) {
   .hero-right {
     position: relative;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .getStarted {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .appleDownload {
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 0.5rem 0.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: azure;
+  }
+
+  .androidDownload {
+    cursor: pointer;
+    justify-content: space-between;
+    border-radius: 5px;
+    padding: 0.5rem 0.8rem;
+    display: flex;
+    align-items: center;
+    background-color: #212121;
   }
 
   .hero-header {
