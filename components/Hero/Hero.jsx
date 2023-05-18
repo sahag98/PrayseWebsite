@@ -19,7 +19,11 @@ const Hero = () => {
           </p>
 
           <div className='getStarted'>
-            <a style={{ textDecoration: 'none' }}>
+            <a
+              style={{ textDecoration: 'none' }}
+              target='_blank'
+              href='https://apps.apple.com/us/app/prayerlist-app/id6443480347'
+            >
               <div className='appleDownload'>
                 <p style={{ color: 'black', marginRight: 5, fontWeight: 500, fontSize: '1rem' }}>Get Started</p>
                 <AiOutlineApple size={30} color='black' />

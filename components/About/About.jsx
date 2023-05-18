@@ -2,6 +2,7 @@
 import './about.css'
 import Image from "next/image";
 import { motion } from 'framer-motion'
+import { AiOutlineInstagram } from 'react-icons/ai';
 const About = () => {
 
   const about = [
@@ -50,6 +51,10 @@ const About = () => {
           You can add prayer requests for yourself or others, track answered prayers,
           favorite daily verses and much more.
         </p>
+        {/* <section className='socials'>
+          <h3>Follow us to stay up to date with future updates & changes</h3>
+          <AiOutlineInstagram size={30} />
+        </section> */}
       </motion.div>
     </main>
   )
