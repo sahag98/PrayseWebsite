@@ -57,7 +57,7 @@ const Reviews = () => {
     {
       id: 4,
       icon: <BsPersonCircle style={{ marginRight: 10 }} color='#add8e6' size={40} />,
-      name: 'Blabla245',
+      name: 'Sarona Arzoumanian',
       review: 'I love this app! It is a cool app where you simply add your prayers. Very straightforward and easy to use!',
       rating: 5
     },
