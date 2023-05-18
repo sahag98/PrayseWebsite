@@ -47,14 +47,25 @@ const About = () => {
         whileInView={{ opacity: 1 }} className='about-right'>
         <h2 className='about-title'>Our app offers a user-friendly interface and a range of practical
           features.</h2>
-        <p>
+        <p className='about-long'>
+          Whether you're looking to deepen your own prayer
+          life or connect with others in your community,
+          our app is a valuable tool for anyone seeking
+          to grow in their faith. Start your journey
+          towards a more intentional and meaningful
+          prayer life today with our prayer list app.
+        </p>
+        <ul>
+          <li>- Add prayer requests for yourself and others</li>
+          <li>- Track answered prayers</li>
+          <li>- Favorite daily verses</li>
+          <li>- Meditate on the daily devotional</li>
+          <li>- And more!</li>
+        </ul>
+        {/* <p className='about-short'>
           You can add prayer requests for yourself or others, track answered prayers,
           favorite daily verses and much more.
-        </p>
-        {/* <section className='socials'>
-          <h3>Follow us to stay up to date with future updates & changes</h3>
-          <AiOutlineInstagram size={30} />
-        </section> */}
+        </p> */}
       </motion.div>
     </main>
   )

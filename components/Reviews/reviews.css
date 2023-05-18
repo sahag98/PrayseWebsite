@@ -1,0 +1,38 @@
+.reviews-container {
+  height: 700px;
+  overflow-x: hidden;
+}
+
+.reviews-container>h2 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.reviews-items {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+}
+
+.review-item {
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  background-color: #212121;
+  height: 20rem;
+  padding: 20px;
+  gap: 20px;
+  min-width: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  transition: 1s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+@media screen and (max-width: 768px) {
+  .reviews-container>h2 {
+    text-align: center;
+    font-size: 1.5em;
+  }
+}
