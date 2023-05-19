@@ -1,0 +1,78 @@
+.contact-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.contact-container>p {
+  width: 70%;
+  line-height: 1.5em;
+  text-align: center;
+}
+
+.contact-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 80px;
+  align-items: center;
+}
+
+.contact-header {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.email {
+  background-color: #161616;
+  display: flex;
+  height: 4rem;
+  width: 25%;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  align-items: center;
+  cursor: pointer;
+  transition: all 400ms ease;
+}
+
+.email:hover,
+.instagram:hover {
+  background-color: #212121;
+}
+
+.instagram {
+  background-color: #161616;
+  display: flex;
+  height: 4rem;
+  width: 25%;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  align-items: center;
+  cursor: pointer;
+  transition: all 400ms ease;
+}
+
+.instagram>span {
+  margin-left: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .contact-wrapper {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .contact-container>p {
+    width: 100%;
+  }
+
+  .email {
+    width: 100%;
+  }
+
+  .instagram {
+    width: 100%;
+  }
+}

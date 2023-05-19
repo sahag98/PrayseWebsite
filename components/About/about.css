@@ -14,17 +14,18 @@
 .about-left {
   height: 80%;
   justify-content: center;
-  align-items: center;
+  align-content: center;
   display: flex;
   flex-wrap: wrap;
-  column-gap: 50px;
-  row-gap: 0px;
+  gap: 50px;
   flex: 1;
 }
 
 .items-image {
   width: 200px;
 }
+
+
 
 .about-item {
   flex: 1;
@@ -56,13 +57,16 @@
   gap: 20px;
 }
 
-.about-right>ul>li {
+.features {
   color: #888888;
   ;
 }
 
+.about-long {
+  color: #888888;
+}
+
 .about-right>p {
-  color: #c2c2c2;
   font-size: 1em;
 }
 

@@ -1,7 +1,7 @@
 "use client"
 import './about.css'
 import Image from "next/image";
-import { motion } from 'framer-motion'
+import { motion, AnimatePresence } from 'framer-motion'
 import { AiOutlineInstagram } from 'react-icons/ai';
 const About = () => {
 
@@ -30,6 +30,29 @@ const About = () => {
       image: '/assets/book.png',
       desc: 'Learn about Jesus and take the next step'
     }
+  ]
+
+  const items = [
+    {
+      id: 1,
+      feature: '- Add prayer requests for yourself and others',
+    },
+    {
+      id: 2,
+      feature: '- Track answered prayers',
+    },
+    {
+      id: 3,
+      feature: '- Favorite daily verses',
+    },
+    {
+      id: 4,
+      feature: '- Meditate on the daily devotional',
+    },
+    {
+      id: 5,
+      feature: '- And more!',
+    },
   ]
   return (
     <main id="About" className='about-container'>

@@ -63,8 +63,9 @@ const Reviews = () => {
     },
   ]
   return (
-    <div className='reviews-container'>
+    <div id='Reviews' className='reviews-container'>
       <h2>Reviews</h2>
+      <p style={{ marginBottom: 20 }}>See what our users have to say about our app.</p>
       <div className='reviews-items'>
         {/* <Slider {...settings}> */}
         {reviews.map((r) => (
@@ -74,7 +75,7 @@ const Reviews = () => {
               <h3>{r.name}</h3>
             </div>
             <p>{r.review}</p>
-            <StarRating rating={r.rating} />
+            <StarRating index={r.id} rating={r.rating} />
           </div>
         ))}
         {/* </Slider> */}
