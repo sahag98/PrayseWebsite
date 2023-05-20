@@ -1,5 +1,4 @@
 "use client"
-import { AiFillStar } from 'react-icons/ai'
 import { BsPersonCircle } from 'react-icons/bs'
 import './reviews.css'
 import StarRating from './StarRating'
@@ -8,14 +7,6 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import { useState, useEffect } from 'react';
 const Reviews = () => {
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    adaptiveHeight: true,
-  };
 
   const [currentIndex, setCurrentIndex] = useState(0)
 
@@ -65,9 +56,8 @@ const Reviews = () => {
   return (
     <div id='Reviews' className='reviews-container'>
       <h2>Reviews</h2>
-      <p style={{ marginBottom: 20 }}>See what our users have to say about our app.</p>
+      <p style={{ marginBottom: 20 }}>See what some of our users have to say about our app</p>
       <div className='reviews-items'>
-        {/* <Slider {...settings}> */}
         {reviews.map((r) => (
           <div className='review-item' key={r.id} style={{ transform: `translate(-${currentIndex * 100}%)` }}>
             <div style={{ display: 'flex', alignItems: 'center' }}>
@@ -78,7 +68,6 @@ const Reviews = () => {
             <StarRating index={r.id} rating={r.rating} />
           </div>
         ))}
-        {/* </Slider> */}
       </div>
     </div>
   )

@@ -17,10 +17,6 @@
   display: flex;
   flex-wrap: nowrap;
   overflow: hidden;
-  background-color: #11161b;
-  background-image:
-    radial-gradient(at 47% 33%, hsl(50.32, 20%, 28.999999999999996%) 0, transparent 59%),
-    radial-gradient(at 82% 65%, hsl(215.22, 47%, 19%) 0, transparent 55%);
 }
 
 .review-item {
@@ -30,9 +26,8 @@
   backdrop-filter: blur(15px) saturate(180%);
   -webkit-backdrop-filter: blur(15px) saturate(180%);
   background-color: rgba(44, 44, 44, 0.29);
-
-
   height: 20rem;
+  border-radius: 10px;
   padding: 20px;
   gap: 20px;
   min-width: 100%;

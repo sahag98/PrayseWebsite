@@ -8,7 +8,7 @@ const StarRating = ({ rating, index }) => {
     const stars = [];
 
     for (let i = 0; i < fullStars; i++) {
-      stars.push(<AiFillStar size={30} color='#d8d800' />);
+      stars.push(<AiFillStar key={index} size={30} color='#d8d800' />);
     }
     return stars;
   };
