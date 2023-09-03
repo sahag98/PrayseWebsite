@@ -1,16 +1,16 @@
 .reviews-container {
-  height: 100vh;
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 50px;
 }
 
 .reviews-container>h2 {
   text-align: center;
   font-size: 2.5em;
-  margin-bottom: 20px;
+  margin-bottom:10px;
 }
 
 .reviews-items {
@@ -44,8 +44,8 @@
   }
 
   .reviews-container {
-    height: 60vh;
     display: block;
     overflow-x: hidden;
+    margin-bottom: 20px;
   }
 }

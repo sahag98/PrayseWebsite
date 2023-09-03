@@ -25,12 +25,16 @@ nav {
   cursor: pointer;
   align-items: center;
   width: 60%;
-  font-weight: 400;
+  font-weight: 300;
   justify-content: space-evenly;
 }
 
 .nav-list>li {
   transition: all 300ms ease-in-out;
+}
+
+.nav-list>li{
+  font-size: smaller;
 }
 
 .nav-list>li:hover {

@@ -29,7 +29,7 @@ const Navbar = () => {
       top: 0,
       transition: {
         when: "beforeChildren",
-        staggerChildren: 0.5,
+        staggerChildren: 0.3,
       },
     },
     closed: {

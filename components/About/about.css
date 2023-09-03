@@ -1,6 +1,7 @@
 .about-container {
   height: 100vh;
   display: flex;
+  flex-direction: row-reverse;
   gap: 80px;
   width: 100%;
   align-items: center;
@@ -90,6 +91,7 @@
   .about-left {
     display: flex;
     flex-wrap: wrap;
+    gap: 20px;
   }
 
   .about-title {

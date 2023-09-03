@@ -56,7 +56,7 @@ const Reviews = () => {
   return (
     <div id='Reviews' className='reviews-container'>
       <h2>Reviews</h2>
-      <p style={{ marginBottom: 20 }}>See what some of our users have to say about our app</p>
+      <p style={{ marginBottom: 20 }}>See what some of our users have to say about Prayse.</p>
       <div className='reviews-items'>
         {reviews.map((r) => (
           <div className='review-item' key={r.id} style={{ transform: `translate(-${currentIndex * 100}%)` }}>

@@ -12,11 +12,14 @@
 .getStarted {
   display: flex;
   gap: 20px;
+  width: 100%;
   align-items: center;
+
 }
 
 .appleDownload {
   cursor: pointer;
+  width: 100%;
   border-radius: 5px;
   padding: 0.5rem 0.8rem;
   display: flex;
@@ -31,10 +34,16 @@
   scale: 1.05;
 }
 
+.downloadLinks{
+  width: 25%;
+  text-decoration: none;
+}
+
 .androidDownload {
   cursor: pointer;
   justify-content: space-between;
   border-radius: 5px;
+  width: 100%;
   padding: 0.5rem 0.8rem;
   display: flex;
   align-items: center;
@@ -109,6 +118,10 @@
     font-size: 2.5rem;
   }
 
+  .downloadLinks{
+    width: 50%;
+    text-decoration: none;
+  }
   .hero-desc {
     font-size: 1.2rem;
     line-height: 25px;

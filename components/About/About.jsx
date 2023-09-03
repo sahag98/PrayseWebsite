@@ -10,25 +10,25 @@ const About = () => {
       id: 1,
       title: 'Folders',
       image: '/assets/folder.png',
-      desc: 'Easily create folders to organize different prayers'
+      desc: 'Create folders to organize different prayers.'
     },
     {
       id: 2,
       title: 'Devotional',
       image: '/assets/devotional.png',
-      desc: 'Meditate daily on a devotional provided by @triedbyfire'
+      desc: 'Meditate daily on a devotional provided by @triedbyfire.'
     },
     {
       id: 3,
       title: 'Community',
       image: '/assets/earth.png',
-      desc: 'Share prayers and pray for one another through the Community page'
+      desc: 'Share prayers and pray for one another through the Community page.'
     },
     {
       id: 4,
       title: 'Gospel of Jesus',
       image: '/assets/book.png',
-      desc: 'Learn about Jesus and take the next step'
+      desc: 'Learn about Jesus and take the next step.'
     }
   ]
 
@@ -58,11 +58,15 @@ const About = () => {
     <main id="About" className='about-container'>
       <section className='about-left'>
         {about.map((a) => (
-          <motion.div initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }} transition={0.8} key={a.id} className='about-item'>
+          <motion.div 
+          initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }} 
+            transition={2} 
+            key={a.id} 
+            className='about-item'>
             <Image className='items-image' width={200} height={200} src={a.image} alt={a.title + 'image'} />
             <h2>{a.title}</h2>
-            <p>{a.desc}</p>
+            <p style={{lineHeight:1.5}}>{a.desc}</p>
           </motion.div>
         ))}
       </section>
