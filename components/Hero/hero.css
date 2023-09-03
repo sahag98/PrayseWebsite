@@ -14,7 +14,6 @@
   gap: 20px;
   width: 100%;
   align-items: center;
-
 }
 
 .appleDownload {
@@ -109,7 +108,81 @@
   font-size: 1rem;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (min-width:800px) and (max-width:1024px)  {
+  .hero-right {
+    position: relative;
+    width: 100%;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .downloadLinks{
+    width: 50%;
+    text-decoration: none;
+  }
+  .hero-desc {
+    font-size: 1.2rem;
+    line-height: 25px;
+    color: #888888;
+  }
+
+  .getStarted {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .appleDownload {
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 0.5rem 0.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: azure;
+  }
+
+  .androidDownload {
+    cursor: pointer;
+    justify-content: space-between;
+    border-radius: 5px;
+    padding: 0.5rem 0.8rem;
+    display: flex;
+    align-items: center;
+    background-color: #212121;
+  }
+
+  .hero-header {
+    width: 100%;
+  }
+
+  .hero-img {
+    width: 90%;
+    height: 100%;
+    position: absolute;
+    object-fit: contain;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    animation: animate 2s infinite ease alternate;
+  }
+
+  .dwnld-button {
+    z-index: 10;
+  }
+
+  .hero-section {
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 800px) {
   .hero-right {
     position: relative;
   }

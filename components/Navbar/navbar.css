@@ -1,8 +1,8 @@
 nav {
   height: 80px;
+  background-color: #121212;
   position: sticky;
   top: 0;
-  background-color: #121212;
   box-shadow: 0 0 10px rgba(168, 168, 168, 0.15);
   display: flex;
   z-index: 99;
@@ -70,7 +70,17 @@ nav {
   align-items: center;
 }
 
-@media screen and (max-width:920px) {
+@media screen and (min-width:800px) and (max-width:1024px) {
+  nav{
+    padding: 30px 20px 30px 20px;
+  }
+
+  .navbar-menu{
+    display: none;
+  }
+}
+
+@media screen and (max-width:800px) {
   .nav-links {
     display: none;
   }
