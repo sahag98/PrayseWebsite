@@ -13,6 +13,10 @@ nav {
   width: 100%;
 }
 
+.navbar-header{
+  font-size: 1.8rem;
+}
+
 .support{
   text-decoration: none;
   display: flex;

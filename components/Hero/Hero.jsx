@@ -36,6 +36,9 @@ const Hero = () => {
               </div>
             </a>
           </div>
+          <div className='hero-users'>
+            <span>200+ active users</span>
+          </div>
         </section>
         <div className='hero-right'>
           <Canvas>
@@ -48,7 +51,7 @@ const Hero = () => {
                   color="#FFD68A"
                   attach="material"
                   distort={0.5}
-                  speed={1}
+                  speed={0.5}
                 />
               </Sphere>
             </Suspense>
