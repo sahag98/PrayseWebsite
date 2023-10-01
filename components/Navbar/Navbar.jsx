@@ -58,7 +58,9 @@ const Navbar = () => {
       <ul className='nav-list'>
         {['Home', 'About', 'Reviews', 'Contact', 'Support'].map((item) => (
           <>
-          {item == 'Support' ? <a className='support' href="https://www.buymeacoffee.com/prayse" target='_blank'><li>Support</li><span><AiOutlineHeart style={{marginTop:2}} size={25}  /></span></a> :  
+          {item == 'Support' ? <a className='support' href="https://www.buymeacoffee.com/prayse" target='_blank'>
+            <li>Support</li><span><AiOutlineHeart style={{marginTop:2}} size={25}  />
+            </span></a> :  
           <li key={`link-${item}`}>
             <a className='normal-links' href={`#${item}`}>{item}</a>
           </li>

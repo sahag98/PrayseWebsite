@@ -64,7 +64,7 @@
   display: flex;
   flex-direction: column;
   flex: 2;
-  gap: 20px;
+  gap: 15px;
 }
 
 .hero-right {
@@ -74,19 +74,16 @@
 }
 
 .hero-users{
+  margin-top: 5px;
   width: fit-content;
   display: flex;
-  background: radial-gradient(circle at 100% 100%, #121212 0, #121212 14px, transparent 14px) 0% 0%/15px 15px no-repeat,
-            radial-gradient(circle at 0 100%, #121212 0, #121212 14px, transparent 14px) 100% 0%/15px 15px no-repeat,
-            radial-gradient(circle at 100% 0, #121212 0, #121212 14px, transparent 14px) 0% 100%/15px 15px no-repeat,
-            radial-gradient(circle at 0 0, #121212 0, #121212 14px, transparent 14px) 100% 100%/15px 15px no-repeat,
-            linear-gradient(#121212, #121212) 50% 50%/calc(100% - 2px) calc(100% - 30px) no-repeat,
-            linear-gradient(#121212, #121212) 50% 50%/calc(100% - 30px) calc(100% - 2px) no-repeat,
-            linear-gradient(205deg, rgba(250,6,107,0.86) 0%, transparent 34.508%, rgba(228,20,113,0.85) 62.908%, rgba(234,26,123,0.89) 100%),
-            linear-gradient(133deg, #d44015 0%, #f9681d 100%);
+ border: 1px solid #a5c9ff;
+ border-radius: 15px;
+ padding: 10px;
 
-padding: 10px;
-border-radius: 15px;
+box-sizing: border-box;
+
+/* border-radius: 15px; */
   justify-content: center;
   align-items: center;
 
