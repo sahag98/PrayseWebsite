@@ -52,10 +52,14 @@ const Navbar = () => {
 
   return (
     <nav className='navbar'>
+       <Link style={{textDecoration:'none', color:'white'}} href="/">
       <section className='navbar-logo'>
+       
         <Image className='navbar-icon' width={50} height={50} src='/assets/prayerhands.png' alt="website logo" />
         <h1 className='navbar-header'>Prayse</h1>
+       
       </section>
+      </Link>
       <ul className='nav-list'>
       <Link  className='normal-links' href="/privacy">
           <li style={{fontSize:14}} >Privacy Policy
