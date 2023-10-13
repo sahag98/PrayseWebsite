@@ -1,5 +1,6 @@
 import React from 'react'
 import "./privacy.css"
+import Navbar from '../../components/Navbar/Navbar'
 const Page = () => {
   return (
     <>
