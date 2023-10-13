@@ -88,7 +88,7 @@ const Navbar = () => {
           <HiX className='X-logo' onClick={() => setToggle(false)} />
           <ul className='mobile-ul' >
           <Link  className='normal-links' href="/privacy">
-          <li style={{fontSize:14}} >Privacy Policy
+          <li className='mobile-li' >Privacy Policy
           </li>
       </Link>
             {['Home', 'About', 'Reviews','Privacy Policy', 'Contact','Support'].map((item) => (
