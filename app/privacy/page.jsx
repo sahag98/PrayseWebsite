@@ -2,6 +2,8 @@ import React from 'react'
 import "./privacy.css"
 const Page = () => {
   return (
+    <>
+    <Navbar />
     <div className='privacy-container'> 
     <h2>Privacy Policy for Prayse</h2>
     <h1>Privacy Policy</h1>
@@ -200,6 +202,7 @@ You are advised to review this Privacy Policy periodically for any changes. Chan
 <br />
 <span>Generated using Privacy Policies Generator</span>
     </div>
+    </>
   )
 }
 
