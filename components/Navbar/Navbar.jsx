@@ -7,6 +7,7 @@ import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion'
 import styles from './navbar.module.css'
 import {AiOutlineHeart} from "react-icons/ai"
+import Link from 'next/link';
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
@@ -56,8 +57,13 @@ const Navbar = () => {
         <h1 className='navbar-header'>Prayse</h1>
       </section>
       <ul className='nav-list'>
+      <Link  className='normal-links' href="/privacy">
+          <li style={{fontSize:14}} >Privacy Policy
+          </li>
+      </Link>
         {['Home', 'About', 'Reviews', 'Contact', 'Support'].map((item) => (
           <>
+          
           {item == 'Support' ? <a className='support' href="https://www.buymeacoffee.com/prayse" target='_blank'>
             <li>Support</li><span><AiOutlineHeart style={{marginTop:2}} size={25}  />
             </span></a> :  
@@ -81,7 +87,7 @@ const Navbar = () => {
         >
           <HiX className='X-logo' onClick={() => setToggle(false)} />
           <ul className='mobile-ul' >
-            {['Home', 'About', 'Reviews', 'Contact','Support'].map((item) => (
+            {['Home', 'About', 'Reviews','Privacy Policy', 'Contact','Support'].map((item) => (
               <>
                {item == 'Support' ? <motion.li variants={linkVariants} className='mobile-li' onClick={() => setToggle(false)}><a className='support' href="https://www.buymeacoffee.com/prayse" target='_blank'><li>Support</li><span><AiOutlineHeart style={{marginTop:2}} size={25}  /></span></a> </motion.li>:
               <motion.li variants={linkVariants} onClick={() => setToggle(false)} className='mobile-li' key={`link-${item}`}>
