@@ -1,8 +1,8 @@
 "use client"
 import './about.css'
 import Image from "next/image";
-import { motion, AnimatePresence } from 'framer-motion'
-import { AiOutlineInstagram } from 'react-icons/ai';
+import { motion} from 'framer-motion'
+
 const About = () => {
 
   const about = [
@@ -89,10 +89,6 @@ const About = () => {
           <li>- Meditate on the daily devotional</li>
           <li>- And more!</li>
         </ul>
-        {/* <p className='about-short'>
-          You can add prayer requests for yourself or others, track answered prayers,
-          favorite daily verses and much more.
-        </p> */}
       </motion.div>
     </main>
   )

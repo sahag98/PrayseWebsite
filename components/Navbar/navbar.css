@@ -114,6 +114,9 @@ nav {
     display: none;
   }
 
+  .privacy{
+    font-size: 0.8rem;
+  }
   .navbar {
     padding: 1rem;
   }
