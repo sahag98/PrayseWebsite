@@ -36,6 +36,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  box-shadow: -1px 8px 71px -23px rgba(161,161,161,0.75);
+-webkit-box-shadow: -1px 8px 71px -23px rgba(161,161,161,0.75);
+-moz-box-shadow: -1px 8px 71px -23px rgba(161,161,161,0.75);
   gap: 20px;
   padding: 20px;
   width: 350px;
