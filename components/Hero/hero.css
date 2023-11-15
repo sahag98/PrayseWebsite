@@ -1,5 +1,7 @@
 .hero-container {
   height: calc(100vh - 80px);
+  padding: 0px 100px 0px 100px;
+  background-color: #121212;
   display: flex;
   scroll-snap-align: center;
   align-items: center;
@@ -200,6 +202,10 @@ box-sizing: border-box;
 }
 
 @media screen and (max-width: 800px) {
+
+  .hero-container{
+    padding: 20px;
+  }
   .hero-right {
     position: relative;
   }

@@ -1,13 +1,13 @@
 .app {
-  padding: 0px 100px 0px 100px;
+  /* padding: 0px 100px 0px 100px; */
   scroll-behavior: smooth;
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 0px;
 }
 
 @media screen and (max-width: 900px) {
   .app {
-    padding: 20px;
+    /* padding: 20px; */
   }
 }
