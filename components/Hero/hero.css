@@ -1,5 +1,5 @@
 .hero-container {
-  height: calc(100vh - 80px);
+  height: calc(100svh - 80px);
   padding: 0px 100px 0px 100px;
   background-color: #121212;
   display: flex;
