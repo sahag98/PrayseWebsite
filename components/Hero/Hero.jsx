@@ -13,8 +13,8 @@ const Hero = () => {
         <section className="hero-header">
           <h1 className="hero-title">Welcome to Prayse</h1>
           <p className="hero-desc">
-            Create and manage your prayer list, helping you stay organized and
-            focused in your spiritual walk with God.
+            Create and manage your prayer list, helping you stay organized in
+            your spiritual walk with God.
           </p>
           <div className="getStarted">
             <a
@@ -56,7 +56,7 @@ const Hero = () => {
               </div>
             </a>
           </div>
-          <div
+          {/* <div
             style={{
               display: "flex",
               marginTop: 10,
@@ -77,7 +77,7 @@ const Hero = () => {
             <div className="hero-users">
               <span>200+ active users</span>
             </div>
-          </div>
+          </div> */}
         </section>
         <div className="hero-right">
           <Canvas>
