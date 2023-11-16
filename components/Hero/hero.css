@@ -258,7 +258,7 @@ box-sizing: border-box;
   }
 
   .hero-header {
-    flex: none;
+    flex: 1;
     width: 100%;
   }
 
