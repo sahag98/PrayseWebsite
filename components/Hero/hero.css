@@ -204,7 +204,9 @@ box-sizing: border-box;
 @media screen and (max-width: 800px) {
 
   .hero-container{
-    height: 100svh;
+    height: auto;
+    /* background-color: #a5c9ff; */
+    /* height: 100vh; */
     padding: 20px;
     justify-content: center;
   }
@@ -263,8 +265,8 @@ box-sizing: border-box;
   }
 
   .hero-img {
-    width: 90%;
-    height: 400px;
+    width: 100%;
+    height: 500px;
     position: absolute;
     object-fit: contain;
     top: 0;

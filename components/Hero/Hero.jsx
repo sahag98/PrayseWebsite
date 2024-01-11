@@ -99,7 +99,7 @@ const Hero = () => {
             className="hero-img"
             width={700}
             height={700}
-            src="/assets/hero-img.png"
+            src="/assets/prayse-app.png"
             alt="app screenshot"
           />
         </div>

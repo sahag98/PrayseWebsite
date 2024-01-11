@@ -64,11 +64,11 @@ const Navbar = () => {
           <h1 className="navbar-header">Prayse</h1>
         </section>
       </Link>
-      <Link className="normal-links" href="/privacy">
+      {/* <Link className="normal-links" href="/privacy">
         <li className="privacy" style={{ fontSize: 13 }}>
           Privacy Policy
         </li>
-      </Link>
+      </Link> */}
       <ul className="nav-list">
         {["Home", "About", "Reviews", "Contact", "Support"].map((item) => (
           <>
