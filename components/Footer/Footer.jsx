@@ -1,11 +1,13 @@
-import React from 'react'
-import './footer.css'
+"use client";
+import React, { useState } from "react";
+import "./footer.css";
 const Footer = () => {
+  const [email, setEmail] = useState("");
   return (
-    <div className='footer-container'>
+    <div className="footer-container">
       <span>@2023 Prayse by Sahak Arzoumanian</span>
     </div>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

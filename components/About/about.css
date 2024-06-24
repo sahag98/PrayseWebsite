@@ -1,6 +1,6 @@
 .about-container {
   height: 100vh;
-  padding: 0px 100px 0px 100px;
+  padding: 0px 120px 0px 120px;
   display: flex;
   flex-direction: row-reverse;
   gap: 80px;

@@ -13,7 +13,6 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
   useEffect(() => {
-    console.log("in nav useefffect");
     handleBodyScroll();
   }, [toggle]);
 
@@ -64,29 +63,27 @@ const Navbar = () => {
           <h1 className="navbar-header">Prayse</h1>
         </section>
       </Link>
-      {/* <Link className="normal-links" href="/privacy">
-        <li className="privacy" style={{ fontSize: 13 }}>
-          Privacy Policy
-        </li>
-      </Link> */}
+
       <ul className="nav-list">
-        {["Home", "About", "Reviews", "Contact", "Support"].map((item) => (
+        {["Shop", "About", "Reviews", "Contact", "Support"].map((item) => (
           <>
             {item == "Support" ? (
-              <a
-                className="support"
-                href="https://www.buymeacoffee.com/prayse"
-                target="_blank"
-              >
-                <li>Support</li>
-                <span>
-                  <AiOutlineHeart style={{ marginTop: 2 }} size={25} />
-                </span>
-              </a>
+              <li key={`link-${item}`}>
+                <a
+                  className="support"
+                  href="https://www.buymeacoffee.com/prayse"
+                  target="_blank"
+                >
+                  <li>Support</li>
+                  <span>
+                    <AiOutlineHeart style={{ marginTop: 2 }} size={25} />
+                  </span>
+                </a>
+              </li>
             ) : (
               <li key={`link-${item}`}>
                 <a className="normal-links" href={`#${item}`}>
-                  {item}
+                  <span>{item}</span>
                 </a>
               </li>
             )}

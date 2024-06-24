@@ -1,6 +1,7 @@
 .privacy-container{
   padding: 100px;
   line-height: 2;
+  background-color: #121212;
 }
 
 
@@ -8,5 +9,4 @@
   .privacy-container {
     padding: 10px;
   }
-
 }

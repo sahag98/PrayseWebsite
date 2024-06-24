@@ -56,28 +56,6 @@ const Hero = () => {
               </div>
             </a>
           </div>
-          {/* <div
-            style={{
-              display: "flex",
-              marginTop: 10,
-              alignItems: "center",
-              gap: 20,
-            }}
-          >
-            <a
-              href="https://www.producthunt.com/posts/prayse?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-prayse"
-              target="_blank"
-            >
-              <img
-                src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=421083&theme=dark"
-                alt="Prayse - Create&#0032;a&#0032;prayer&#0032;list&#0032;and&#0032;be&#0032;organized&#0032;in&#0032;your&#0032;walk&#0032;with&#0032;God&#0046; | Product Hunt"
-                style={{ width: 220, height: 54 }}
-              />
-            </a>
-            <div className="hero-users">
-              <span>200+ active users</span>
-            </div>
-          </div> */}
         </section>
         <div className="hero-right">
           <Canvas>
